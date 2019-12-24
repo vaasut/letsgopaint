@@ -1,0 +1,56 @@
+<html>
+
+<head>
+	<meta charset = "utf-8">
+	<title> Let's Go Paint </title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.js"></script>
+
+	<script src = "characterObjects/player.js"></script>
+	<script src = "characterObjects/floor.js"></script>
+	<script src = "characterObjects/wall.js"></script>
+	<script src = "characterObjects/door.js"></script>
+	<script src = "characterObjects/sign.js"></script>
+
+	<script src = "rooms/room.js"></script>
+	<script src = "rooms/startRooms.js"></script>
+	<script src = "rooms/cemeteryRooms.js"></script>
+	<script src = "rooms/caveRooms.js"></script>
+	<script src = "rooms/farRooms.js"></script>
+	<script src = "rooms/endRooms.js"></script>
+	<script src = "optionFlags/startOptionFlags.js"></script>
+	<script src = "optionFlags/secondaryFunction.js"></script>
+	<script src = "collisionDetection/collisions.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="textplatformer.css";
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.css">   
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.js"></script>
+</head>
+
+<body>
+	<a href="about.html" target="_blank"> <div id="keyboard"> About / Help </div> </a>
+	<center> <canvas id="myCanvas" width="700" height="500"> </canvas> </center>
+	<center>
+		<div id = "gameText"> Press "Enter" to Begin </div> 
+	</center>
+	
+</body>
+
+<audio   <source id = "song" src="" type="audio/p4"> > 
+</audio>
+
+<script>
+const WIDTH = 700;
+const HEIGHT = 500;
+const LEFT = 65
+const RIGHT = 68
+var room = titleRoom;
+
+console.log("If this is your first time playing, I would recommend closing the console to get a better experience of the game. Otherwise, have fun!");
+</script>
+
+<script src = "keyFunctions.js"></script>
+<script src = "playGame.js"></script>
+
+
+</html>

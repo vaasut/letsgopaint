@@ -1,0 +1,62 @@
+body{
+	background-color: #000000
+}
+
+#myCanvas {
+	border:1px solid #ffffff;
+    margin-top: 30px;
+}
+
+h1{
+    margin: 40px;
+    color: white;
+    text-align: center;
+}
+
+#keyboard {
+	background-color: #333333;
+    border: 1px solid #ffffff;
+    color: white;
+    padding: 15px 32px;
+    margin: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+img {
+    border: 1px solid #ffffff;
+    text-align: left;
+}
+
+
+#keyboard{
+    padding: 8px 16px;
+    margin: 6px;
+    font-size: 12px;
+}
+
+button:hover {
+    background-color: #555555;
+    color: white;
+    cursor: pointer;
+}
+
+#gameText{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#gameWrap{
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 650px;
+    padding: 10px;
+}
+
