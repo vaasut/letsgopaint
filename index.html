@@ -57,6 +57,32 @@ const RIGHT = 68
 var room = titleRoom;
 
 console.log("If this is your first time playing, I would recommend closing the console to get a better experience of the game. Otherwise, have fun!");
+
+function preloadImages(array) {
+    let imgCache = new Image()
+    for (let i = 0; i < array.length; i++) {
+        imgCache.src = array[i];
+    }
+}
+
+let imageList = ["rooms/roomimages/cave2.png","rooms/roomimages/cave3.png","rooms/roomimages/cave4.png","rooms/roomimages/cave4a.png","rooms/roomimages/cave5.png","rooms/roomimages/cave5a.png","rooms/roomimages/cave6.png","rooms/roomimages/cave7.png",
+	"rooms/roomimages/cave8.png","rooms/roomimages/cave9.png","rooms/roomimages/cave9a.png","rooms/roomimages/cave10.png","rooms/roomimages/cave10a.png","rooms/roomimages/cave10b.png","rooms/roomimages/cave10c.png","rooms/roomimages/cave11.png",
+	"rooms/roomimages/cave11a.png","rooms/roomimages/cave11b.png","rooms/roomimages/cave11c.png","rooms/roomimages/cave11floor.png","rooms/roomimages/cave12.png","rooms/roomimages/cave12a.png","rooms/roomimages/cave12b.png","rooms/roomimages/cave12c.png",
+	"rooms/roomimages/cave13.png","rooms/roomimages/cave13a.png","rooms/roomimages/cave14.png","rooms/roomimages/cave4a.png",
+	"rooms/roomimages/cemetery1.png","rooms/roomimages/cemetery2.png","rooms/roomimages/cemetery3.png","rooms/roomimages/cemetery4.png","rooms/roomimages/cemetery5.png","rooms/roomimages/cemetery5floor.png",
+	"rooms/roomimages/cemetery6.png","rooms/roomimages/cemetery7.png","rooms/roomimages/cemetery7floor.png","rooms/roomimages/cemetery8.png","rooms/roomimages/cemetery8floor.png","rooms/roomimages/cemetery9.png",
+	"rooms/roomimages/cemetery9floor.png","rooms/roomimages/cemetery10.png","rooms/roomimages/cemetery10floor.png","rooms/roomimages/cemetery11.png","rooms/roomimages/cemetery11floor.png",
+	"rooms/roomimages/cemetery12.png","rooms/roomimages/cemetery12floor.png",
+	"rooms/roomimages/end0.png","rooms/roomimages/end2floor.png","rooms/roomimages/end4.png","rooms/roomimages/end5.png","rooms/roomimages/end5floor.png","rooms/roomimages/end11.png","rooms/roomimages/endingpainting1.png",
+	"rooms/roomimages/far3.png","rooms/roomimages/far4.png","rooms/roomimages/far5.png","rooms/roomimages/far6.png","rooms/roomimages/far8.png","rooms/roomimages/far9.png","rooms/roomimages/far10.png","rooms/roomimages/far12.png","rooms/roomimages/far13.png",
+	"rooms/roomimages/far14.png","rooms/roomimages/far14a.png",
+	"rooms/roomimages/room2.png","rooms/roomimages/room3.png","rooms/roomimages/room5.png","rooms/roomimages/room6.png",
+	"rooms/roomimages/start0.png","rooms/roomimages/start0a.png","rooms/roomimages/start1.png","rooms/roomimages/start5.png",
+	"rooms/roomimages/walk6.png","rooms/roomimages/walk7.png","rooms/roomimages/walk8.png","rooms/roomimages/walk9.png","rooms/roomimages/walk10.png","rooms/roomimages/walk11.png","rooms/roomimages/walk12.png",
+	"rooms/roomimages/walk14.png","rooms/roomimages/walk15.png","rooms/roomimages/walk15floor.png","rooms/roomimages/walk16.png","rooms/roomimages/walk18.png","rooms/roomimages/walk18floor.png",]
+
+preloadImages(imageList);
+
 </script>
 
 <script src = "keyFunctions.js"></script>
