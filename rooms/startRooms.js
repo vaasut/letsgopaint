@@ -45,7 +45,7 @@ var startZero = new Room(100,blue,[startThreeFloor],[startOneWallA],[],[paintSup
 startZero.floor = "";
 startZero.misc = 10;
 var startOne = new Room(1,blue,[startThreeFloor],[startOneWallB],[],[leaveRoom, campusFlyers, mayaRoom],[""],[""],"rooms/roomimages/start1.png");
-startOne.options = ["don't leave yet ->", "<- leave"];
+startOne.options = ["don't leave yet (Press right arrow to view next option) -> ", "<- leave (Press left arrow to view previous option)"];
 startOne.floor = "";
 
 const startTwoDoor = new Door(480,375,0,50,"#ffffff",startOne,500,420,0,false);

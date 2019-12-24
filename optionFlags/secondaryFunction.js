@@ -115,7 +115,8 @@ var secondaryFunction = function(flagroom){
 
 	if (flagroom.id === 18){
 		flagroom.signs[0].text = ["","it's a Giant Snow Turtle...","it's blocking the bridge...", "maybe there's another way around the bridge"];
-		walkSixteen.signs[0].text = ["","\"hey, what's going on?\"","\"the bridge is blocked!?!?!\"","\"well in that case, you'll have to go around a different way\"", "\"there's a path through the cemetery.\"", "\"here's a key to open up the gate.\"", "* you got the cemetery key *", "s"];
+		walkSixteen.signs[0].text = ["","\"hey, what's going on?\"","...","\"the bridge is blocked!?!?!\"","\"well in that case, you'll have to go around a different way\"", "\"there's a path through the cemetery.\"", "\"here's a key to open up the gate.\"", "* you got the cemetery key *", "s"];
+		walkSixteen.signs[0].on = true
 	}
 	if (flagroom.id === 22){
 		flagroom.signs[1].xpos = -200;
