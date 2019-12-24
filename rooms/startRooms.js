@@ -22,11 +22,11 @@ var signThree = new Sign(500,400,30,["","you feel kind of tired though.", "do yo
 
 // (id, player,floors,walls,doors,signs,text,flag,background)
 
-const startZeroText = ["", "you've been invited to go paint.", "it might be fun.", "maybe you should go..."];
+const startZeroText = ["", "you've been invited to paint.", "it might be fun.", "maybe you should go..."];
 
-var startZeroMessage = ["", "You received a Message! (Press Enter)", "\"Hey!! I'm super pumped that you signed up for our club!\"", 
-"\"I'd love to see you at some of the events!\"", "\"We're painting tonight, if you want to come!\"", 
-"-From Alden", "painting might be fun...", "maybe you should go...","s"]
+// var startZeroMessage = ["", "You received a Message! (Press Enter)", "\"Hey!! I'm super pumped that you signed up for our club!\"", 
+// "\"I'd love to see you at some of the events!\"", "\"We're painting tonight, if you want to come!\"", 
+// "-From Alden","...", "painting might be fun...", "maybe you should go...","s"]
 
 var endingZero = new Room(71,blue,[endFloor],[],[],[],[""],[""],"rooms/roomimages/end0.png");
 var endingOne = new Room(72,blue,[endFloor],[],[],[],[""],[""],"rooms/roomimages/endingpainting1.png");
@@ -34,7 +34,7 @@ endingOne.floor = "";
 var titleSign = new Sign(400,700,300,["","Press \"Enter\" to Begin","s"],true,true);
 var titleRoom = new Room (73,blue,[endFloor],[],[],[titleSign],[""],[""],"rooms/roomimages/walk8.png")
 
-var startZeroBed = new Sign(400,400,170,startZeroMessage,false,true)
+var startZeroBed = new Sign(400,400,170,["", "you've been invited to paint. (Press Enter)", "it might be fun.", "maybe you should go...","s"],false,true)
 var paintSupplies = new Sign(-100,400,50,["","you put your paint set in your backpack.","s"],false,false);
 var leaveRoom = new Sign(350,400,60,["","hey!", "maybe you should get your paint set before you leave?","s"],false,false);
 var paintDoubt = new Sign(-100,400,30,["","well... then again...", "maybe it's better to take your paint set, just in case?","you never really know when you might need it.","s"],false,true);
