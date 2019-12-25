@@ -46,7 +46,7 @@
 	
 </body>
 
-<img id = "imgCache" src="rooms/roomimages/cave2.png"/>
+<!-- <img id = "imgCache" src="rooms/roomimages/cave2.png"/> -->
 
 <audio   <source id = "song" src="" type="audio/p4"> > 
 </audio>
@@ -58,15 +58,18 @@ const LEFT = 65
 const RIGHT = 68
 var room = titleRoom;
 
-function preloadImages(array) {
-    for (let i = 0; i < array.length; i++) {
-        $("#imgCache").attr("src",array[i]);
-        console.log("cached images?")
+
+function preload(imageList) {
+    for (let i = 0; i < imageList.length-1; i++) {
+        imageList[i] = new Image();
+        imageList[i].src = imageList[i+1];
+        console.log("loaded?")
     }
-    $("#imgCache").attr("style", "display:none");
 }
 
-var imageList = ["rooms/roomimages/cave2.png","rooms/roomimages/cave3.png","rooms/roomimages/cave4.png","rooms/roomimages/cave4a.png","rooms/roomimages/cave5.png","rooms/roomimages/cave5a.png","rooms/roomimages/cave6.png","rooms/roomimages/cave7.png",
+//-- usage --//
+
+var imageList = ["","rooms/roomimages/cave2.png","rooms/roomimages/cave3.png","rooms/roomimages/cave4.png","rooms/roomimages/cave4a.png","rooms/roomimages/cave5.png","rooms/roomimages/cave5a.png","rooms/roomimages/cave6.png","rooms/roomimages/cave7.png",
 	"rooms/roomimages/cave8.png","rooms/roomimages/cave9.png","rooms/roomimages/cave9a.png","rooms/roomimages/cave10.png","rooms/roomimages/cave10a.png","rooms/roomimages/cave10b.png","rooms/roomimages/cave10c.png","rooms/roomimages/cave11.png",
 	"rooms/roomimages/cave11a.png","rooms/roomimages/cave11b.png","rooms/roomimages/cave11c.png","rooms/roomimages/cave11floor.png","rooms/roomimages/cave12.png","rooms/roomimages/cave12a.png","rooms/roomimages/cave12b.png","rooms/roomimages/cave12c.png",
 	"rooms/roomimages/cave13.png","rooms/roomimages/cave13a.png","rooms/roomimages/cave14.png","rooms/roomimages/cave4a.png",
@@ -81,7 +84,7 @@ var imageList = ["rooms/roomimages/cave2.png","rooms/roomimages/cave3.png","room
 	"rooms/roomimages/start0.png","rooms/roomimages/start0a.png","rooms/roomimages/start1.png","rooms/roomimages/start5.png",
 	"rooms/roomimages/walk6.png","rooms/roomimages/walk7.png","rooms/roomimages/walk8.png","rooms/roomimages/walk9.png","rooms/roomimages/walk10.png","rooms/roomimages/walk11.png","rooms/roomimages/walk12.png",
 	"rooms/roomimages/walk14.png","rooms/roomimages/walk15.png","rooms/roomimages/walk15floor.png","rooms/roomimages/walk16.png","rooms/roomimages/walk18.png","rooms/roomimages/walk18floor.png"];
-preloadImages(imageList);
+preload(imageList);
 
 console.log("If this is your first time playing, I would recommend closing the console to get a better experience of the game. Otherwise, have fun!");
 
