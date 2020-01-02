@@ -359,8 +359,7 @@ var secondaryFunction = function(flagroom){
 		}
 	}
 	else if (flagroom.id === 73){
-		console.log("version 1.0.0")
-		$("#keyboard").hide()
+		$("#keyboard").hide();
 		flagroom.player.ypos = 400;
 		flagroom.player.xpos = 400;
 		room = startZero
