@@ -202,7 +202,7 @@ var startOptionFlag = function(flagroom){
 		else if (flagroom.player.optionSelect === 1+flagroom.misc){
 			flagroom.signs[0].on = true;
 			flagroom.signs[0].text = ["","\"Painting!?\"", "\"Wow, that's cool.\"", "\"I haven't painted something in a while because I've been making snow sculptures.\"", 
-			"\"But I used ot paint a lot.\"", "\"In fact I remember a few months ago over the summer I was telling my cousin Mogimo,\"", "\"Mogimo, I want to go paint!\"", 
+			"\"But I used to paint a lot.\"", "\"In fact I remember a few months ago over the summer I was telling my cousin Mogimo,\"", "\"Mogimo, I want to go paint!\"", 
 			"\"Mogimo though isn't too in to painting so he was like -Yeah, sure, whatever.\"", "\"So anyway I decided I was going to go paint Constellation Creek.\"" ,
 			"\"Oh, have you ever been to Constellation Creek?\"", "o"];
 			walkSixteen.options = ["nope ->", "<- yeah ->", "<- Oh sorry... I just remembered I have to go somewhere..."];

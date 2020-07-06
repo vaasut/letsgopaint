@@ -13,7 +13,7 @@ endFour.floor = "rooms/roomimages/walk18floor.png";
 var endFive = new Room(61,blue,[endOneFloor],[],[],[],[""],[""],"rooms/roomimages/end5.png");
 endFive.floor = "rooms/roomimages/end5floor.png";
 
-endSixSign = new Sign(460,400,120,["","i guess it's probably better not to go to the cemetery right now ...", "their bike isn't in there."], false,false);
+endSixSign = new Sign(460,400,120,["","it's probably better not to go into the cemetery right now ...", "their bike isn't in there."], false,false);
 var endSix = new Room(62,blue,[endOneFloor],[],[],[endSixSign],[""],[""],"rooms/roomimages/walk14.png");
 
 var endNine = new Room(65,blue,[endOneFloor],[],[],[],[""],[""],"rooms/roomimages/room5.png");
