@@ -1,7 +1,7 @@
 var secondaryFunction = function(flagroom){
 	if (flagroom.id === 100){
 		if (flagroom.misc === 10){
-			flagroom.signs[2].text = ["","you've been invited to go paint.", "it might be fun.", "maybe you should go..."];
+			flagroom.signs[2].text = ["","you've been invited to go paint.", "it might be fun.", "maybe you should go...", "(use the left and right arrow keys to move)"];
 			flagroom.misc = 0;
 		}
 		else if (flagroom.misc === 0){ //pick up paint set
