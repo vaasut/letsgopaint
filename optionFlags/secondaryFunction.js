@@ -85,7 +85,7 @@ var secondaryFunction = function(flagroom){
 		}
 	}
 	else if (flagroom.id === 16){
-		if (flagroom.misc === -11){
+		if (flagroom.misc === -13){
 			flagroom.signs[0].text = ["","\"Have fun painting!\""];
 			flagroom.walls[0].ypos = 100;
 			flagroom.misc = -19
@@ -322,7 +322,7 @@ var secondaryFunction = function(flagroom){
 			flagroom.fade = true;
 			flagroom.transitionRoom = endingOne;
 			flagroom.player.ypos = 1000;
-			flagroom.player.achievements = 3;
+			flagroom.player.achievements = 4;
 			
 		}
 		else{
@@ -351,7 +351,7 @@ var secondaryFunction = function(flagroom){
 		flagroom.player.ypos = 1000;
 		if (flagroom.misc !== 3){
 			flagroom.transitionRoom = endingOne;
-			flagroom.player.achievements = 4;
+			flagroom.player.achievements = 5;
 		}
 		else{
 			flagroom.transitionRoom = endingZero;

@@ -113,6 +113,9 @@ class Room{
 				ctx.fillText("Painted a picture", 100,310);
 				ctx.fillText("Met someone new", 100,340);
 			}
+			if (this.player.achievements > 4) {
+				ctx.fillText("Made a new friend (maybe??)", 100,370);
+			}
 			//ctx.fillText(, 100,340);
 		}
 

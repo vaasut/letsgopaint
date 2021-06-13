@@ -22,7 +22,7 @@ var signThree = new Sign(500,400,30,["","you feel kind of tired though.", "do yo
 
 // (id, player,floors,walls,doors,signs,text,flag,background)
 
-const startZeroText = ["", "you've been invited to paint.", "it might be fun.", "maybe you should go...", "(use the left and right arrow keys to move)", "(press enter to interact with objects in the background)"];
+const startZeroText = ["", "you've been invited to paint.", "it might be fun.", "maybe you should go...", "(use the left and right arrow keys to move)"];
 
 // var startZeroMessage = ["", "You received a Message! (Press Enter)", "\"Hey!! I'm super pumped that you signed up for our club!\"", 
 // "\"I'd love to see you at some of the events!\"", "\"We're painting tonight, if you want to come!\"", 

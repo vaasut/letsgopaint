@@ -216,7 +216,7 @@ var startOptionFlag = function(flagroom){
 			"\"And I was like, Because I like clouds -duh.\"", "\"And they were like clouds are lame.\"", "\"And I was like, clouds are not lame!\"","\"And they were like, yeah they are.\"","\"And then I was like, No they aren't!\"", "\"And then all of a sudden, Zale, the spirit of the river, emerged from the river with a big SPLOOSH!\"",
 			 "\"And they completely soaked the other person I was talking to.\"", "\"And the person got really annoyed, and was like,\"", "\"Why'd you do that?\"", "\"And then Zale, who doesn't really talk, signed to them in their river language,\"", "\"Clouds...are...cool.\"","\"So anyway, um wait... what was I talking about?\"", "o"];
 			walkSixteen.options = ["ummmm ...->", "<- well ...->", "<- Oh sorry... I just remembered I have to go somewhere..."];
-			flagroom.misc = -11;
+			flagroom.misc = -13;
 		}
 		else if (flagroom.player.optionSelect === 10+flagroom.misc){
 			flagroom.signs[0].on = true;
@@ -225,9 +225,9 @@ var startOptionFlag = function(flagroom){
 			"\"And I was like, Because I like clouds -duh.\"", "\"And they were like clouds are lame.\"", "\"And I was like, clouds are not lame!\"","\"And they were like, yeah they are.\"","\"And then I was like, No they aren't\"", "\"And then all of a sudden, Zale, the spirit of the river, emerged from the river with a big SPLOOSH!\"",
 			 "\"And they completely soaked the other person I was talking to.\"", "\"And the person got really annoyed, and was like,\"", "\"Why'd you do that?\"", "\"And then Zale, who doesn't really talk, signed to them in their river language,\"", "\"Clouds...are...cool.\"","\"So anyway, um wait... what was I talking about?\"", "o"];
 			walkSixteen.options = ["ummmm ...->", "<- well ...->", "<- Oh sorry... I just remembered I have to go somewhere..."];
-			flagroom.misc = -11;
+			flagroom.misc = -13;
 		}
-		else if ((flagroom.player.optionSelect === 11+flagroom.misc) || (flagroom.player.optionSelect === 12+flagroom.misc)){
+		else if ((flagroom.player.optionSelect === 13+flagroom.misc) || (flagroom.player.optionSelect === 14+flagroom.misc)){
 			flagroom.signs[0].on = true;
 			flagroom.signs[0].text = ["","\"Oh that's right.\"", "\"I was talking about painting.\"", "\"So anyway I really like painting.\"", "\"Usually, I like watercolor painting\"", "\"But you know, sometimes I like to expirement with acrylics too.\"",
 			"\"Well anyway, let me know how the painting goes!\"", "s"];
@@ -256,6 +256,7 @@ var startOptionFlag = function(flagroom){
 		}
 
 		else if(flagroom.player.optionSelect === 6+flagroom.misc || flagroom.player.optionSelect === 7+flagroom.misc){
+			flagroom.misc = -6;
 			flagroom.signs[0].text = ["","\"Cool. So anyway I was standing by this Elephant Snow Sculpture...\"", "\"When I started to smell this amazing smell coming from across the creek.\"", 
 			"\"So naturally I went towards the smell.\"", "\"And what do you know...\"" , "\"Someone had set up a pancake stand right in the middle of the woods.\"", "\"I mean what an amazing day!\"", 
 			"\"So anyway the point is...\"", "\"Sometimes you just need to cross a bridge or a creek.\"", "\"So anyway, have fun!\"", "s"];
